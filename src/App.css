@@ -1,5 +1,6 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  overflow: hidden;
   margin: 0;
   text-align: center;
 }
@@ -9,7 +10,7 @@
   color: white !important;
 }
 
-h1 {
+.spacing {
   letter-spacing: 0.5rem;
 }
 
