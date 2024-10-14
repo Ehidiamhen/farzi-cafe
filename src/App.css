@@ -17,3 +17,7 @@
 .bottom-nav a:not(:last-child) {
   border-right: 1px solid white;
 }
+
+.about-img {
+  background-position: 75%;
+}

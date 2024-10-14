@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const NavItem = ({ children }) => (
   <li className="py-2 text-gold hover:text-white transition-colors duration-300">
@@ -32,15 +33,33 @@ export default function Navbar() {
             <X size={30} />
           </button>
           <ul className="text-center space-y-4">
-            <NavItem>HOME</NavItem>
-            <NavItem>ABOUT US</NavItem>
-            <NavItem>EVENTS</NavItem>
-            <NavItem>FAMILY DINING</NavItem>
-            <NavItem>BUSINESS DINING</NavItem>
-            <NavItem>RESERVE A TABLE</NavItem>
-            <NavItem>ORDER ONLINE</NavItem>
-            <NavItem>MENU</NavItem>
-            <NavItem>CONTACT US</NavItem>
+            <NavItem>
+                <Link onClick={() => setIsOpen(false)} to="/">HOME</Link>
+            </NavItem>
+            <NavItem>
+                <Link onClick={() => setIsOpen(false)} to="/about">ABOUT US</Link>
+            </NavItem>
+            <NavItem>
+                <Link onClick={() => setIsOpen(false)} to="/events">EVENTS</Link>
+            </NavItem>
+            <NavItem>
+                <Link onClick={() => setIsOpen(false)} to="/family">FAMILY DINING</Link>
+            </NavItem>
+            <NavItem>
+                <Link onClick={() => setIsOpen(false)} to="/business">BUSINESS DINING</Link>
+            </NavItem>
+            <NavItem>
+                <Link onClick={() => setIsOpen(false)} to="/">RESERVE A TABLE</Link>
+            </NavItem>
+            <NavItem>
+                <Link onClick={() => setIsOpen(false)} to="/">ORDER ONLINE</Link>
+            </NavItem>
+            <NavItem>
+                <Link onClick={() => setIsOpen(false)} to="/">MENU</Link>
+            </NavItem>
+            <NavItem>
+                <Link onClick={() => setIsOpen(false)} to="/contact">CONTACT US</Link>
+            </NavItem>
           </ul>
         </div>
       )}
