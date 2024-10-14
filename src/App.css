@@ -1,0 +1,18 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  text-align: center;
+}
+
+.hero-img {
+  width: 15rem;
+  color: white !important;
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+}
+
+.bottom-nav a:not(:last-child) {
+  border-right: 1px solid white;
+}
