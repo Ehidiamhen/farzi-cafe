@@ -29,6 +29,7 @@ export default function About() {
           />
         </div>
       </section>
+
       <section id="2" className="flex flex-wrap mx-auto py-12">
         <div className="flex flex-col justify-center text-center w-80 mx-auto">
           <p className="text-gold tracking-[0.35em] font-bold text-sm">
@@ -74,6 +75,7 @@ export default function About() {
           />
         </div>
       </section>
+
       <section id="3" className="my-12">
         <div className="flex flex-col justify-center">
           <p className="text-gold tracking-[0.35em] font-bold text-sm">
@@ -89,6 +91,7 @@ export default function About() {
         </div>
         Image Carousel
       </section>
+
       <section id="4">
         <div className="flex flex-col justify-center">
           <p className="text-gold tracking-[0.35em] font-bold text-sm">
@@ -104,6 +107,7 @@ export default function About() {
         Image Carousel
         <Button text="VIEW MORE" link="/events" />
       </section>
+      
       <section id="5" className="flex flex-wrap">
         <div className="w-1/2 min-w-80 mx-auto flex flex-col justify-center">
           <p className="text-gold tracking-[0.35em] font-bold text-sm">
