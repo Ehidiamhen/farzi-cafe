@@ -2,13 +2,25 @@ import family1 from "../assets/images/family-1.webp"
 import family2 from "../assets/images/family-2.webp"
 import family3 from "../assets/images/family-3.webp"
 import Button from "./Button";
+import Carousel from "./Carousel";
 import Reservations from "./Reservations";
 
 export default function Family() {
+    const familyCarousel =[
+        "https://farzicafecanada.ca/wp-content/uploads/2024/09/food-2.webp",
+        "https://farzicafecanada.ca/wp-content/uploads/2024/09/currey-1.webp",
+        "https://farzicafecanada.ca/wp-content/uploads/2024/09/food-1.webp",
+        "https://farzicafecanada.ca/wp-content/uploads/2024/09/indian-food-item-3webp.webp",
+        "https://farzicafecanada.ca/wp-content/uploads/2024/09/indian-food.webp",
+        "https://farzicafecanada.ca/wp-content/uploads/2024/09/indian-food-item.webp",
+        "https://farzicafecanada.ca/wp-content/uploads/2024/09/bar-2.webp",
+        "https://farzicafecanada.ca/wp-content/uploads/2024/09/wine.webp",
+        "https://farzicafecanada.ca/wp-content/uploads/2024/09/bar.webp",
+    ]
   return (
     <div>
         <section id="1" className="py-12 border-b border-gold">
-          <div className="hidden md:block flex flex-col justify-center text-center py-12 w-5/6 mx-auto">
+          <div className="hidden md:flex flex-col justify-center text-center py-12 w-5/6 mx-auto">
             <p className="text-gold tracking-[0.35em] font-bold text-sm">
               CHERISHED MOMENTS
             </p>
@@ -21,7 +33,9 @@ export default function Family() {
               Whether you’re planning a casual lunch or a special dinner, Farzi Cafe is the perfect setting to gather your loved ones.
             </p>
           </div>
-          Image Carousel
+          <div className="md:px-2 w-screen md:w-[941px] mx-auto">
+              <Carousel images={familyCarousel} slidesToShow dots={false} className="h-[500px] w-[941px] object-cover" />
+          </div>
         </section>
 
         <section id="2" className="w-4/5 mx-auto flex flex-wrap py-20 justify-evenly border-b border-gold">

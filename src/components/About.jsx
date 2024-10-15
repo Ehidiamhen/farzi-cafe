@@ -5,6 +5,8 @@ import instagram from "../assets/instagram.svg"
 import facebook from "../assets/facebook.svg"
 import lamb from "../assets/Lamb-Shank.mov"
 import Button from "./Button";
+import Carousel from "./Carousel";
+import { carouselImages } from "./Events";
 
 export default function About() {
   return (
@@ -88,8 +90,10 @@ export default function About() {
             warm lighting, contemporary decor, and attentive service create an
             environment where you can relax and enjoy.
           </p>
+          <div className="px-2 my-12">
+              <Carousel images={carouselImages} slidesToShow={4} dots={true} className="w-96 h-96" />
+            </div>
         </div>
-        Image Carousel
       </section>
 
       <section id="4">
@@ -107,7 +111,7 @@ export default function About() {
         Image Carousel
         <Button text="VIEW MORE" link="/events" />
       </section>
-      
+
       <section id="5" className="flex flex-wrap">
         <div className="w-1/2 min-w-80 mx-auto flex flex-col justify-center">
           <p className="text-gold tracking-[0.35em] font-bold text-sm">
