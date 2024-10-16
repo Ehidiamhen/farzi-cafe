@@ -94,11 +94,22 @@ export default function Family() {
             />
           </div>
           <div>
-            <img className="border border-gold" src={family3} alt="" />
+            <img className="hidden sm:block border border-gold" src={family3} alt="" />
           </div>
         </section>
 
-        <section id="5">IMAGE GRID</section>
+        <section id="5">
+          <div id="5" className="flex mb-6 w-[99%] mx-auto h-60 sm:h-fit">
+            <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/food-2.webp" alt="family-img" />
+            <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/indian-food.webp" alt="family-img" />
+            <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/wine.webp" alt="family-img" />
+          </div>
+          <div id="5" className="flex mb-14 w-[99%] mx-auto h-60 sm:h-fit">
+            <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/bar-2.webp" alt="family-img" />
+            <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/indian-food-item-3webp.webp" alt="family-img" />
+            <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/indian-food-item-4.webp" alt="family-img" />
+          </div>
+        </section>
 
         <section id="6">
             <Reservations />

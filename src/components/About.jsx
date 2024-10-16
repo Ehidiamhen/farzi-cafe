@@ -8,6 +8,16 @@ import Button from "./Button";
 import Carousel from "./Carousel";
 import { carouselImages } from "./Events";
 
+const aboutCarousel2 = [
+    "https://farzicafecanada.ca/wp-content/uploads/2024/08/DSC04747-800x500.jpg",
+    "https://farzicafecanada.ca/wp-content/uploads/2024/08/DSC04720-800x500.jpg",
+    "https://farzicafecanada.ca/wp-content/uploads/2024/08/DSC04663-800x500.jpg",
+    "https://farzicafecanada.ca/wp-content/uploads/2024/08/DSC04751-800x500.jpg",
+    "https://farzicafecanada.ca/wp-content/uploads/2024/08/DSC04735-800x500.jpg",
+    "https://farzicafecanada.ca/wp-content/uploads/2024/08/DSC04682-800x500.jpg",
+    "https://farzicafecanada.ca/wp-content/uploads/2024/08/DSC04741-800x500.jpg",
+]
+
 export default function About() {
   return (
     <div>
@@ -108,11 +118,13 @@ export default function About() {
             in full swing.
           </p>
         </div>
-        Image Carousel
+        <div className=" w-screen lg:w-11/12 mx-auto pt-14 pb-6">
+            <Carousel images={aboutCarousel2} slidesToShow={2} dots={false} className="px-1.5 w-fit mx-auto" />
+        </div>
         <Button text="VIEW MORE" link="/events" />
       </section>
 
-      <section id="5" className="flex flex-wrap">
+      <section id="5" className="flex flex-wrap mt-12">
         <div className="w-1/2 min-w-80 mx-auto flex flex-col justify-center">
           <p className="text-gold tracking-[0.35em] font-bold text-sm">
             Premier Mississauga Restaurant

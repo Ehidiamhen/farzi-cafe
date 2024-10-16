@@ -49,7 +49,11 @@ export default function Contact() {
           </div>
         </section>
 
-        <section></section>
+        <section id="3" className="flex mb-12 w-[99%] mx-auto h-60 sm:h-fit">
+          <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/indian-food-item-3webp.webp" alt="" />
+          <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/indian-food-item-4.webp" alt="" />
+          <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/fazi-cafe.webp" alt="" />
+        </section>
     </div>
   )
 }

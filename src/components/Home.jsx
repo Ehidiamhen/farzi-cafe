@@ -70,7 +70,7 @@ export default function Home() {
         </div>
       </section>
  
-      <section id="4" className="w-4/5 mx-auto flex flex-wrap py-20 justify-between border-b border-gold">
+      <section id="4" className="w-4/5 mx-auto flex flex-wrap py-20 justify-between">
         <div>
           <img className="border border-gold" src={indianFoodItem2} alt="" />
         </div>
@@ -86,7 +86,11 @@ export default function Home() {
         </div>
       </section>
  
-      <section id="5">IMAGES</section>
+      <section id="5" className="flex mb-12 w-[99%] mx-auto h-60 sm:h-fit">
+        <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/indian-food-item-3webp.webp" alt="" />
+        <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/indian-food-item-4.webp" alt="" />
+        <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/09/fazi-cafe.webp" alt="" />
+      </section>
  
       <section id="6"><Reservations /></section>
     </>

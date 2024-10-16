@@ -83,8 +83,10 @@ export default function Business() {
           </div>
         </section>
 
-        <section id="4">
-            IMAGES
+        <section id="4" className="flex mb-12 w-[99%] mx-auto h-60 sm:h-fit">
+          <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/10/cb05bd2479f4b7737fc5cd8136c277103282896e-4708x4708-1.webp" alt="business-img" />
+          <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/10/84465848408725c2d684799133ccbce4bae34836-768x699-1.webp" alt="business-img" />
+          <img className="w-1/3 border-2 border-[#cfcfcf] object-cover" src="https://farzicafecanada.ca/wp-content/uploads/2024/10/3eafebe8ba41d834106a607c9bc45d96731a11ad-5101x5101-1.webp" alt="business-img" />
         </section>
 
         <section id="5">
